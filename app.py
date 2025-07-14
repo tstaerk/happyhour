@@ -43,8 +43,8 @@ st.title("🤖 Monnemer Bot (Google Cloud Version)")
 
 # Füge das Bild vom Wasserturm hinzu
 st.image(
-    "https://upload.wikimedia.org/wikipedia/commons/e/e1/Mannheim_Wasserturm_Friedrichsplatz_1.jpg",
-    caption="De Mannemer Wasserturm, gell?"
+    "https://de.wikipedia.org/wiki/Wasserturm_(Mannheim)#/media/Datei:Mannheim_Wasserturm_Friedrichsplatz_1.jpg",
+    caption="De Monnemer Wasserturm, gell?"
 )
 
 # Initialisiere den Chatverlauf im Session State
