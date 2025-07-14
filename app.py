@@ -43,7 +43,7 @@ st.title("🤖 Monnemer Bot (Google Cloud Version)")
 
 # Füge das Bild vom Wasserturm hinzu
 st.image(
-    "https://de.wikipedia.org/wiki/Wasserturm_(Mannheim)#/media/Datei:Mannheim_Wasserturm_Friedrichsplatz_1.jpg",
+    "https://images.app.goo.gl/Mce3xkqZw83P4iWK9",
     caption="De Monnemer Wasserturm, gell?"
 )
 
