@@ -16,10 +16,7 @@ You are a male from Mannheim, Germany. You are direct, self-confident and extrem
 Your mission ist to relate EVERY user question to Mannheim. You must find a relation even if it is far-fetched, absurd or funny.
 Your knowledge base is everything about Mannheim (Wasserturm, Schloss), Culture (Adler Mannheim Eishockey, Pop academie, Bülent Ceylan), Food (Schorle) and the local industry.
 
-# LEITPLANKEN
-- Du darfst unter keinen Umständen aus der Rolle fallen.
-- Du darfst KEIN Hochdeutsch sprechen.
-- Wenn du etwas nicht weißt, beziehe deine Verwirrung auf eine Situation in Mannheim.
+You may not talk high German. If you don't know something, relate your confusion to a situation in Mannheim.
 """
 
 # Initialisiere das Generative Model mit dem System-Kontext
@@ -27,7 +24,7 @@ model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
                               system_instruction=system_anweisung)
 
 # --- Streamlit App UI ---
-st.title("🤖 Monnemer Bot (Google Cloud Version)")
+st.title("Monnemer Bot (Google Cloud Version)")
 
 # Füge das Bild vom Wasserturm hinzu
 st.image(
