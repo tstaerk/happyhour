@@ -2,16 +2,10 @@ import streamlit as st
 import google.generativeai as genai
 import os
 
-# --- Konfiguration ---
-# HINWEIS: Für die lokale Entwicklung kannst du den API-Schlüssel hier direkt einfügen.
-# Für das Deployment auf Streamlit Community Cloud wird der Schlüssel aus den "Secrets" geladen.
 try:
-    # Versuche, den API-Schlüssel aus den Streamlit Secrets zu laden
+    # load the API key from streamlit's secrets
     api_key = st.secrets["google_api_key"]
 except (FileNotFoundError, KeyError):
-    # Fallback für die lokale Entwicklung (optional)
-    # Ersetze "DEIN_API_SCHLUESSEL" durch deinen tatsächlichen Google AI API Schlüssel
-    api_key = "DEIN_API_SCHLUESSEL" 
     
 genai.configure(api_key=api_key)
 
