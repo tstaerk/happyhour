@@ -2,10 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 import os
 
-try:
-    # load the API key from streamlit's secrets
-    api_key = st.secrets["google_api_key"]
-except (FileNotFoundError, KeyError):
+# load the API key from streamlit's secrets
+api_key = st.secrets["google_api_key"]
 genai.configure(api_key=api_key)
 
 # Dies ist die gesamte "Persönlichkeit" des Chatbots
