@@ -50,4 +50,4 @@ if prompt := st.chat_input("Alla, was willschd wisse?"):
         # Generiere die Antwort und füge sie zum Verlauf hinzu
         response = model.generate_content(prompt)
         st.markdown(response.text)
-        st.session_state.messages.append({"role": "assistant", "content": response.text})
+    st.session_state.messages.append({"role": "assistant", "content": response.text})
